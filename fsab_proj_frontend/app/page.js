@@ -5,12 +5,12 @@ import MyCard from "./components/MyCard";
 export default function Home() {
   return (
     <div>
-      <p> Hello World!</p>
+      <title>Gallery Home</title>
       <MyCard
         // Example of passing in props (properties) to the card
-        title="My React Card"
-        text="This is some text that is inside of the card"
-        buttonText="Click me!"
+        title="Welcome to Your Gallery"
+        text="All your favorite images in one place!"
+        buttonText="Go to gallery"
       ></MyCard>
     </div>
   );

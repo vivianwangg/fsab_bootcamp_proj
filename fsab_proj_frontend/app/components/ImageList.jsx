@@ -15,9 +15,18 @@ function ImageList() {
         getAllImages()
     }, [])
 
+    function changePage() {
+        window.location.href = ("http://localhost:3000/");
+    }
+
     
     return (
         <div>
+            <title>My Gallery</title>
+            <h1>This is your gallery!</h1>
+            <p>Refresh to see uploaded images :D</p>
+            <button onClick={changePage}>Back to Home</button>
+            <p></p>
             {images.map((image) =>
                 <img src= {`data:image/png;base64, ${image.B64}`}></img>
             )}
