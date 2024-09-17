@@ -25,6 +25,7 @@ function ImageList() {
             <title>My Gallery</title>
             <h1>This is your gallery!</h1>
             <p>Refresh to see uploaded images :D</p>
+            <p>Warning: image size must be smaller than 1 Megabyte</p>
             <button onClick={changePage}>Back to Home</button>
             <p></p>
             {images.map((image) =>
