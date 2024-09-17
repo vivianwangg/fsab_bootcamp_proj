@@ -17,7 +17,7 @@ function NewImageForm() {
         });
 
         if(response.status == 200){
-            setStatus("success");
+            setStatus("success! refresh to see your image.");
         }
         else{
             setStatus("error");
