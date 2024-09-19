@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from "react"
+import classes from "./my-card-styles.module.css";
 
 function ImageList() {
     const [images, setImage] = useState([])
@@ -25,11 +26,11 @@ function ImageList() {
             <title>My Gallery</title>
             <h1>This is your gallery!</h1>
             <p>Refresh to see uploaded images :D</p>
-            <p>Warning: image size must be smaller than 1 Megabyte</p>
+            <p>Warning: image size must be smaller than 1 megabyte</p>
             <button onClick={changePage}>Back to Home</button>
             <p></p>
             {images.map((image) =>
-                <img src= {`data:image/png;base64, ${image.B64}`}></img>
+                <img src= {`data:image/png;base64, ${image.B64}`} className= {classes.center}></img>
             )}
         </div>
     )

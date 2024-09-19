@@ -11,7 +11,7 @@ export default function Home() {
         buttonText="Go to gallery"
       ></MyCard>
       <p></p>
-      <img src= "https://thumbs.dreamstime.com/z/smiley-yellow-face-emoji-white-background-smiley-yellow-face-emoji-white-background-vector-150787032.jpg" width="1024"></img>
+      <img src= "https://www.1st-art-gallery.com/media/wysiwyg/back-mob-min2.jpg" className = {classes.center}></img>
     </div>
   );
 }
